@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steven David Macea - Mi Portafolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Mi Pagina Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi">
+  <h2>Sobre mí</h2>
+
+  <div class="sobre-mi-contenido">
+    <img src="./img/perfil.jpg" alt="Foto de Steven Macea">
+
+    <p>
+      ¡Hola! me presento, mi nombre es <strong>Stiven Macea Montes</strong>,
+      me gusta mucho viajar, escuchar música y también leer.
+    </p>
+  </div>
+</section>
+
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="proyecto">
+      <h3>estudiar desarrollo de software me ha ayudado mucho a fortalecer mis conocimientos</h3>
+      <p>
+        me meti a esta carrera para lograr cumplir mis sueños y llegar a ser un gran profesional.
+      </p>
+    </div>
+
+    <div class="proyecto">
+      <h3>Construir mi proyectos de vida</h3>
+      <p>
+        tener un proyecto y tener una mentalidad como desarrollador en software.
+      </p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctame</h2>
+    <div class="contacto-contenido">
+
+      <div class="contacto-imagen">
+        <img src="./img/perfil.jpg" alt="Imagen de contacto">
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-container">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué es el mensaje?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Steven David Macea.</p>
+  </footer>
+</body>
+</html>

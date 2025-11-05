@@ -1,0 +1,247 @@
+/* ====== RESET BÁSICO ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== ESTILOS GENERALES ====== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ====== SECCIONES ====== */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #8cff00;
+}
+
+/* ====== PROYECTOS ====== */
+.proyecto {
+  margin-bottom: 30px;
+}
+
+/* ====== CONTACTO ====== */
+.contacto-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* ====== FORMULARIO ====== */
+.form-container {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00ff5e;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b3ad;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ====== RESPONSIVO ====== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .contacto-contenido {
+    gap: 25px;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 25px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+/* Muy pequeños (menores a 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input, textarea {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+ 
+ /* ====== SECCIÓN SOBRE MÍ ====== */
+.sobre-mi-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* se adapta a pantallas pequeñas */
+}
+
+.sobre-mi-contenido img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.sobre-mi-contenido p {
+  max-width: 600px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .sobre-mi-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mi-contenido img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .sobre-mi-contenido p {
+    text-align: center;
+  }
+}
